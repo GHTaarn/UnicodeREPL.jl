@@ -30,7 +30,7 @@ quick overview of how to use UnicodeREPL.
 
 The main feature is "unicode repl" mode, which can be entered by typing
 the `^` character at the start of a line.
-When the `Tab` key is pressed in "unicode repl" mode, any pattern matching
+When the `Tab` key is pressed in "unicode repl" mode, patterns matching
 `\u(XXXX)` will be
 converted to the Unicode character corresponding to `XXXX`, where `XXXX` is a
 string of any length containing the hexadecimal
