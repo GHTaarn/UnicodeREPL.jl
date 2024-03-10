@@ -1,16 +1,22 @@
 # UnicodeREPL
 
 This is a small [Julia](https://julialang.org) package that enables the user
-to obtain any Unicode character (that the system fonts can display) in the
-Julia REPL if the [Unicode codepoint](https://codepoints.net) is known.
+to obtain any Unicode character in the Julia REPL if the
+[Unicode codepoint](https://codepoints.net) is known (and if the system fonts
+can display it).
 
 ## Installation
 
 In the Julia REPL type:
 ```julia
 import Pkg
-Pkg.add("https://github.com/GHTaarn/UnicodeREPL.jl")
+Pkg.add("UnicodeREPL")
 ```
+(Because `UnicodeREPL.jl` uses non-public Julia interface components,
+the official version is only compatible with stable Julia versions.
+You can bypass this check with
+`Pkg.add("https://github.com/GHTaarn/UnicodeREPL.jl#nocompat")` if you are
+using an unstable version of Julia)
 
 ## Use
 
@@ -19,9 +25,13 @@ In the Julia REPL type:
 using UnicodeREPL
 ```
 
-Hereafter, you will be able to enter "unicode repl" mode by typing
+Herafter you can use the docstring (by typing `?UnicodeREPL`) to get a
+quick overview of how to use UnicodeREPL.
+
+The main feature is "unicode repl" mode, which can be entered by typing
 the `^` character at the start of a line.
-In "unicode repl" mode, any pattern matching `\u(XXXX)` will be
+When the `Tab` key is pressed in "unicode repl" mode, patterns matching
+`\u(XXXX)` will be
 converted to the Unicode character corresponding to `XXXX`, where `XXXX` is a
 string of any length containing the hexadecimal
 [Unicode codepoint](https://codepoints.net) of a valid Unicode character.
