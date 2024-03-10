@@ -1,8 +1,9 @@
 # UnicodeREPL
 
 This is a small [Julia](https://julialang.org) package that enables the user
-to obtain any Unicode character (that the system fonts can display) in the
-Julia REPL if the [Unicode codepoint](https://codepoints.net) is known.
+to obtain any Unicode character in the Julia REPL if the
+[Unicode codepoint](https://codepoints.net) is known (and if the system fonts
+can display it).
 
 ## Installation
 
