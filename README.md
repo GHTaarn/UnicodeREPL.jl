@@ -25,7 +25,7 @@ In the Julia REPL type:
 using UnicodeREPL
 ```
 
-Herafter you can get use the docstring (by typing `?UnicodeREPL`) to get a
+Herafter you can use the docstring (by typing `?UnicodeREPL`) to get a
 quick overview of how to use UnicodeREPL.
 
 The main feature is "unicode repl" mode, which can be entered by typing
