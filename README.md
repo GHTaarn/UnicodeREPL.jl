@@ -25,9 +25,13 @@ In the Julia REPL type:
 using UnicodeREPL
 ```
 
-Hereafter, you will be able to enter "unicode repl" mode by typing
+Herafter you can get use the docstring (by typing `?UnicodeREPL`) to get a
+quick overview of how to use UnicodeREPL.
+
+The main feature is "unicode repl" mode, which can be entered by typing
 the `^` character at the start of a line.
-In "unicode repl" mode, any pattern matching `\u(XXXX)` will be
+When the `Tab` key is pressed in "unicode repl" mode, any pattern matching
+`\u(XXXX)` will be
 converted to the Unicode character corresponding to `XXXX`, where `XXXX` is a
 string of any length containing the hexadecimal
 [Unicode codepoint](https://codepoints.net) of a valid Unicode character.
