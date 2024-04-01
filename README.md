@@ -15,8 +15,8 @@ Pkg.add("UnicodeREPL")
 (Because `UnicodeREPL.jl` uses non-public Julia interface components,
 the official version is only compatible with stable Julia versions.
 You can bypass this check with
-`Pkg.add("https://github.com/GHTaarn/UnicodeREPL.jl#nocompat")` if you are
-using an unstable version of Julia)
+`Pkg.add(url="https://github.com/GHTaarn/UnicodeREPL.jl", rev="nocompat")`
+if you are using an unstable version of Julia)
 
 ## Use
 
