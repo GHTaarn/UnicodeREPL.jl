@@ -92,6 +92,11 @@ such as `°` that can be handled in "julia" mode should normally be entered
 using [standard tab completion sequences](https://docs.julialang.org/en/v1/manual/unicode-input/)
 as this minimises the risk of confusion with similar looking characters.
 
+### Recommended packages
+
+[Glyphy.jl](https://github.com/cormullion/Glyphy.jl) is a very convenient Julia
+package to search for the Unicode codepoint of a Unicode character.
+
 ## Feedback
 
 This is a very rough first version, the plan is to make the user experience
