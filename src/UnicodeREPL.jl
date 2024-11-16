@@ -78,10 +78,11 @@ function input_handler(inputstr)
     Main.eval(Meta.parse(substitution(inputstr)))
 end
 
-function complete_line(x::UnicodeCompletionProvider, s::REPL.LineEdit.PromptState)
+function complete_line(x::UnicodeCompletionProvider, s::REPL.LineEdit.PromptState; hint::Any=:no_hint)
     firstpart = String(s.input_buffer.data[1:s.input_buffer.ptr-1])
     firstpartsub = substitution(firstpart)
     if firstpart != firstpartsub
+        hint == true && return ([firstpart * " --> " * firstpartsub], firstpart, true)
         return ([firstpartsub], firstpart, true)
     elseif VERSION <= v"1.9-"
         return complete_line(x.repl_completion_provider, s)
