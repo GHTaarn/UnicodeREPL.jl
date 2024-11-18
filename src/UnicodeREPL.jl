@@ -36,7 +36,7 @@ function substitution(istr::AbstractString)
                         "\\u(" * str
                     else
                         codepoint = m.match[1:end-1]
-                        Meta.parse("\"\\u$codepoint\"") * str[length(m.match)+1:end]
+                        Meta.parse("\"\\U$codepoint\"") * str[length(m.match)+1:end]
                     end
         end
         return ostr
