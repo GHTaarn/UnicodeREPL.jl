@@ -45,6 +45,6 @@ For pull requests, please have the following in mind:
    5. Test the temporary branch
    6. Merge the temporary branch into release-x.x (e.g. `git switch release-x.x; git merge dev-x.x.x`)
    7. Push to Github
-   8. Write a comment containing the text `@JuliaRegistrator register branch=release-x.x` on the commit on Github to trigger the Julia registrator to register the new version. (You can write release notes in the second and subsequent lines of the comment)
+   8. Write a comment containing the text `@JuliaRegistrator register branch=release-x.x` on the commit on Github to trigger the Julia registrator to register the new version. (You can write release notes in the second and subsequent lines of the comment after the text "Release notes:")
    9. On Github, create a new release, giving release-x.x the tag vx.x.x
    10. Optionally update the `nocompat` branch. Often this can be done by creating a new branch off `nocompat`, cherry picking from the release-x.x branch (using the -x flag), testing and finally merging this into the `nocompat` branch and pushing to Github.
